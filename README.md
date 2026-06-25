@@ -4,6 +4,8 @@ A sample project to explore integration testing for the Nextjs app.
 
 Used for training purpose within [Better Engineering Community](https://www.withnik.com/community) founded by Nik Sumeiko.
 
+[![Integration Tests](https://github.com/niksumeiko/order-tracking/actions/workflows/integration.yml/badge.svg)](https://github.com/niksumeiko/order-tracking/actions/workflows/integration.yml)
+
 ## Prerequisites
 
 - Node.js 22.18+
