@@ -1,4 +1,4 @@
-import { test, expect } from '../testing/fixtures';
+import { test, expect } from '../../playwright/fixtures';
 import {
   confirmOrderDelivery,
   fetchOrder,

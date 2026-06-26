@@ -1,5 +1,5 @@
 import { test as base } from '@playwright/test';
-import { StubableAdapter } from '../common/adapter/AdapterService';
+import { StubableAdapter } from '../app/common/adapter/AdapterService';
 
 type StubAdapterFn = <TArgs extends unknown[], TResult>(
   adapter: StubableAdapter<TArgs, TResult>,
