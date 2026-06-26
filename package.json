@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "concurrently -k -s first -n app,api \"next dev\" \"npm run api\"",
-    "lint": "next lint",
+    "lint": "eslint",
     "format": "prettier --write .",
     "test:integration": "playwright test --ui",
     "test:integration:headless": "playwright test"
