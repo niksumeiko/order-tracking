@@ -1,4 +1,4 @@
-name: Integration Tests
+name: Integration Tests with Playwright
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
     - cron: '0 2 * * *'
 
 jobs:
-  integration:
+  playwright-integration:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -21,4 +21,4 @@ jobs:
 
       - run: npx playwright install --with-deps chromium
 
-      - run: npm run test:integration:headless
+      - run: npm run playwright:test:integration:headless
