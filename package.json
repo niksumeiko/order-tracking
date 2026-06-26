@@ -10,7 +10,9 @@
     "lint": "eslint",
     "format": "prettier --write .",
     "playwright:test:integration": "playwright test --ui",
-    "playwright:test:integration:headless": "playwright test"
+    "playwright:test:integration:headless": "playwright test",
+    "cypress:test:integration": "NEXT_PUBLIC_PHASE=test start-server-and-test dev http://localhost:3000/api/test-stubs 'cypress open --e2e'",
+    "cypress:test:integration:headless": "NEXT_PUBLIC_PHASE=test start-server-and-test dev http://localhost:3000/api/test-stubs 'cypress run'"
   },
   "engines": {
     "node": ">=22.18.0",
