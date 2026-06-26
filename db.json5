@@ -1,11 +1,11 @@
 {
-    order: [
-      {
-        id: "1",
-        type: "Regular"
-      },
-    ],
-    "order-status": {
-      status: "out for delivery",
+  order: [
+    {
+      id: '1',
+      type: 'Regular',
     },
+  ],
+  'order-status': {
+    status: 'out for delivery',
+  },
 }

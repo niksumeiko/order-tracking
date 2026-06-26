@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { confirmOrderDelivery, fetchOrderStatus } from '../domain/OrderAdapter';
 import { Order } from '../domain/OrderService';
 
-type Props = { order: Order; }
+type Props = { order: Order };
 
 export const OrderStatus = ({ order }: Props) => {
   const [status, setStatus] = useState<string>();

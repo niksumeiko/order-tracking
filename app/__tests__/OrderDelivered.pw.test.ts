@@ -12,7 +12,9 @@ test('confirm order delivery', async ({ page, stubAdapter }) => {
 
   await page.goto('/order');
 
-  await expect(page.getByRole('heading', { name: 'Order #ORDER_ID' })).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'Order #ORDER_ID' }),
+  ).toBeVisible();
   await expect(page.getByText('Type: Wholesale')).toBeVisible();
   await expect(page.getByText('Status: lost on the way')).toBeVisible();
 

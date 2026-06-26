@@ -6,7 +6,7 @@ export const fetchOrder = createAdapter({
   name: 'fetch-order-adapter',
   callback: async (orderId: string) => {
     // API round trip
-    const response = await fetch(`http://localhost:3004/order/${orderId}`)
+    const response = await fetch(`http://localhost:3004/order/${orderId}`);
 
     return response.json();
   },

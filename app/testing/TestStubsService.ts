@@ -9,10 +9,14 @@ export async function fetchStubs(): Promise<Record<string, unknown> | null> {
     return null;
   }
 
-  const response = await fetch(`http://localhost:3000/api/test-stubs?sessionId=${sessionId}`, {
-    cache: 'no-store',
-  });
-  const { stubs }: { stubs: Record<string, unknown> | null } = await response.json();
+  const response = await fetch(
+    `http://localhost:3000/api/test-stubs?sessionId=${sessionId}`,
+    {
+      cache: 'no-store',
+    },
+  );
+  const { stubs }: { stubs: Record<string, unknown> | null } =
+    await response.json();
 
   return stubs;
 }

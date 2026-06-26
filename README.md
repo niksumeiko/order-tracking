@@ -26,7 +26,8 @@ Spin up the API along with the app:
 
 ```bash
 npm run api
-``` 
+```
+
 ```bash
 npm run dev
 ```

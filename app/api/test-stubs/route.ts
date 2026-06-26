@@ -21,13 +21,14 @@ export async function POST(req: NextRequest) {
     return new NextResponse(null, { status: 404 });
   }
 
-  const json: { sessionId: string; data: Record<string, unknown> } = await req.json();
+  const json: { sessionId: string; data: Record<string, unknown> } =
+    await req.json();
   const { sessionId, data } = json;
 
   stubs.set(sessionId, data);
 
   return NextResponse.json({
     message: 'Stub allocated/updated',
-    stubs: Object.fromEntries(stubs)
+    stubs: Object.fromEntries(stubs),
   });
 }
