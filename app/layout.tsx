@@ -1,17 +1,6 @@
 import { type Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import { PropsWithChildren } from 'react';
 import './globals.css';
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
 
 export const metadata: Metadata = {
   title: 'Order tracking',
@@ -23,18 +12,9 @@ export default async function RootLayout({
 }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div
-          className="container mx-auto h-screen"
-          style={{ maxWidth: '640px' }}
-        >
-          <div className="pt-8 md:pt-16 h-full">
-            <div className="py-4 px-10 h-full bg-white rounded-t-md">
-              {children}
-            </div>
-          </div>
+      <body className="antialiased">
+        <div style={{ maxWidth: '640px', margin: '100px auto 0' }}>
+          <div style={{ padding: '0 10px' }}>{children}</div>
         </div>
       </body>
     </html>
