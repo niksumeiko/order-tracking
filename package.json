@@ -25,6 +25,9 @@
     "tailwindcss": "^4.3.1",
     "typescript": "^6.0.3"
   },
+  "optionalDependencies": {
+    "lightningcss-linux-x64-gnu": "1.32.0"
+  },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
     "@playwright/test": "^1.61.1",
